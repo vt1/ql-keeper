@@ -106,28 +106,4 @@ class WarehouseQuery(graphene.ObjectType):
                 return Warehouse.objects.filter(**warehouse)
 
         return None
-
-        """
-        warehouseid = kwargs.get('warehouseid')
-        title = kwargs.get('title')
-        active = kwargs.get('active')
-        in_field = kwargs.get('in_field')
-        out = kwargs.get('out')
-        
-        if warehouseid is not None:
-            return Warehouse.objects.filter(pk=warehouseid)
-
-        if title is not None:
-            return Warehouse.objects.filter(title=title)
-
-        if active is not None:
-            return Warehouse.objects.filter(active=active)
-
-        if in_field is not None:
-            return Warehouse.objects.filter(in_field=in_field)
-
-        if out is not None:
-            return Warehouse.objects.filter(out=out)
-        
-        return None
-        """
+       
